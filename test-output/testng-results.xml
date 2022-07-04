@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="nopcommerce" duration-ms="19823" started-at="2022-07-04T03:03:01Z" finished-at="2022-07-04T03:03:21Z">
+    <groups>
+    </groups>
+    <test name="Run on Chrome" duration-ms="19823" started-at="2022-07-04T03:03:01Z" finished-at="2022-07-04T03:03:21Z">
+      <class name="nopcommerce.PageGeneratorManager_III">
+        <test-method status="PASS" signature="BeforeClass(java.lang.String)[pri:0, instance:nopcommerce.PageGeneratorManager_III@51081592]" name="BeforeClass" is-config="true" duration-ms="12506" started-at="2022-07-04T10:03:01Z" finished-at="2022-07-04T10:03:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method status="PASS" signature="Login_01_Empty_Data()[pri:0, instance:nopcommerce.PageGeneratorManager_III@51081592]" name="Login_01_Empty_Data" duration-ms="668" started-at="2022-07-04T10:03:14Z" finished-at="2022-07-04T10:03:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_01_Empty_Data -->
+        <test-method status="PASS" signature="Login_02_Invalid_Email()[pri:0, instance:nopcommerce.PageGeneratorManager_III@51081592]" name="Login_02_Invalid_Email" duration-ms="834" started-at="2022-07-04T10:03:15Z" finished-at="2022-07-04T10:03:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_02_Invalid_Email -->
+        <test-method status="PASS" signature="Login_03_Email_Not_Found()[pri:0, instance:nopcommerce.PageGeneratorManager_III@51081592]" name="Login_03_Email_Not_Found" duration-ms="1227" started-at="2022-07-04T10:03:15Z" finished-at="2022-07-04T10:03:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_03_Email_Not_Found -->
+        <test-method status="PASS" signature="Login_04_Existing_Email_Empty_Password()[pri:0, instance:nopcommerce.PageGeneratorManager_III@51081592]" name="Login_04_Existing_Email_Empty_Password" duration-ms="1131" started-at="2022-07-04T10:03:17Z" finished-at="2022-07-04T10:03:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_04_Existing_Email_Empty_Password -->
+        <test-method status="PASS" signature="Login_05_Existing_Email_Incorrect_Password()[pri:0, instance:nopcommerce.PageGeneratorManager_III@51081592]" name="Login_05_Existing_Email_Incorrect_Password" duration-ms="1194" started-at="2022-07-04T10:03:18Z" finished-at="2022-07-04T10:03:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_05_Existing_Email_Incorrect_Password -->
+        <test-method status="PASS" signature="Login_06_Email_Correct_Password()[pri:0, instance:nopcommerce.PageGeneratorManager_III@51081592]" name="Login_06_Email_Correct_Password" duration-ms="1617" started-at="2022-07-04T10:03:19Z" finished-at="2022-07-04T10:03:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_06_Email_Correct_Password -->
+        <test-method status="PASS" signature="Login_06_My_AccountLink()[pri:0, instance:nopcommerce.PageGeneratorManager_III@51081592]" name="Login_06_My_AccountLink" duration-ms="568" started-at="2022-07-04T10:03:21Z" finished-at="2022-07-04T10:03:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_06_My_AccountLink -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:nopcommerce.PageGeneratorManager_III@51081592]" name="afterClass" is-config="true" duration-ms="57" started-at="2022-07-04T10:03:21Z" finished-at="2022-07-04T10:03:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- nopcommerce.PageGeneratorManager_III -->
+    </test> <!-- Run on Chrome -->
+  </suite> <!-- nopcommerce -->
+</testng-results>

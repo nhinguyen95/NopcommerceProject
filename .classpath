@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/selenium-server-standalone-2.53.1.jar"/>
+	<classpathentry kind="lib" path="WebDriverManger/commons-codec-1.13.jar"/>
+	<classpathentry kind="lib" path="WebDriverManger/commons-collections4-4.3.jar"/>
+	<classpathentry kind="lib" path="WebDriverManger/commons-compress-1.20.jar"/>
+	<classpathentry kind="lib" path="WebDriverManger/commons-io-2.7.jar"/>
+	<classpathentry kind="lib" path="WebDriverManger/commons-lang3-3.11.jar"/>
+	<classpathentry kind="lib" path="WebDriverManger/gson-2.8.6.jar"/>
+	<classpathentry kind="lib" path="WebDriverManger/httpclient5-5.0.1.jar"/>
+	<classpathentry kind="lib" path="WebDriverManger/httpcore5-5.0.1.jar"/>
+	<classpathentry kind="lib" path="WebDriverManger/jarchivelib-1.0.0.jar"/>
+	<classpathentry kind="lib" path="WebDriverManger/jsoup-1.13.1.jar"/>
+	<classpathentry kind="lib" path="WebDriverManger/slf4j-api-1.7.30.jar"/>
+	<classpathentry kind="lib" path="WebDriverManger/webdrivermanager-4.2.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
