@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [nopcommerce_Project_Example]">
+  <parameter name="browser" value="chrome"/>
+  <test name="Run on Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="nopcommerce_TCs.Swicth_Page">
+        <methods>
+          <include name="My_Account"/>
+          <include name="BeforeClass"/>
+        </methods>
+      </class> <!-- nopcommerce_TCs.Swicth_Page -->
+    </classes>
+  </test> <!-- Run on Chrome(failed) -->
+</suite> <!-- Failed suite [nopcommerce_Project_Example] -->

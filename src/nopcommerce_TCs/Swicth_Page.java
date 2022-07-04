@@ -25,7 +25,7 @@ public class Swicth_Page extends BaseTest {
 	public void BeforeClass(String browerName) {
 		driver = getBrowerDriver(browerName);
 		homePage = PageGeneratorManager.getHomePageObject(driver);
-
+         driver.getWindowHandles().size();
 		EmailAddress = "Tester" + generateEmail();
 		firstName = "Auto";
 		lastname = "FC";
