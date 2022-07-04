@@ -1,4 +1,4 @@
-package nopcommerce;
+package nopcommerce_TCs;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;

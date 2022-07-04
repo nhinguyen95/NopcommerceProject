@@ -1,4 +1,4 @@
-package nopcommerce;
+package nopcommerce_TCs;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;

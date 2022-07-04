@@ -1,4 +1,4 @@
-package nopcommerce;
+package nopcommerce_TCs;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;

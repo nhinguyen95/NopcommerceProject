@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="7" passed="7">
+<testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="nopcommerce" duration-ms="19823" started-at="2022-07-04T03:03:01Z" finished-at="2022-07-04T03:03:21Z">
+  <suite name="nopcommerce_Project_Example" duration-ms="9453" started-at="2022-07-04T06:18:26Z" finished-at="2022-07-04T06:18:36Z">
     <groups>
     </groups>
-    <test name="Run on Chrome" duration-ms="19823" started-at="2022-07-04T03:03:01Z" finished-at="2022-07-04T03:03:21Z">
-      <class name="nopcommerce.PageGeneratorManager_III">
-        <test-method status="PASS" signature="BeforeClass(java.lang.String)[pri:0, instance:nopcommerce.PageGeneratorManager_III@51081592]" name="BeforeClass" is-config="true" duration-ms="12506" started-at="2022-07-04T10:03:01Z" finished-at="2022-07-04T10:03:14Z">
+    <test name="Run on Chrome" duration-ms="9453" started-at="2022-07-04T06:18:26Z" finished-at="2022-07-04T06:18:36Z">
+      <class name="nopcommerce_TCs.Swicth_Page">
+        <test-method status="PASS" signature="BeforeClass(java.lang.String)[pri:0, instance:nopcommerce_TCs.Swicth_Page@5034c75a]" name="BeforeClass" is-config="true" duration-ms="3218" started-at="2022-07-04T13:18:26Z" finished-at="2022-07-04T13:18:29Z">
           <params>
             <param index="0">
               <value>
@@ -18,39 +18,57 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method status="PASS" signature="Login_01_Empty_Data()[pri:0, instance:nopcommerce.PageGeneratorManager_III@51081592]" name="Login_01_Empty_Data" duration-ms="668" started-at="2022-07-04T10:03:14Z" finished-at="2022-07-04T10:03:15Z">
+        <test-method status="PASS" signature="Login_01_Register_User()[pri:0, instance:nopcommerce_TCs.Swicth_Page@5034c75a]" name="Login_01_Register_User" duration-ms="3549" started-at="2022-07-04T13:18:29Z" finished-at="2022-07-04T13:18:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login_01_Empty_Data -->
-        <test-method status="PASS" signature="Login_02_Invalid_Email()[pri:0, instance:nopcommerce.PageGeneratorManager_III@51081592]" name="Login_02_Invalid_Email" duration-ms="834" started-at="2022-07-04T10:03:15Z" finished-at="2022-07-04T10:03:15Z">
+        </test-method> <!-- Login_01_Register_User -->
+        <test-method status="PASS" signature="Login_User()[pri:0, instance:nopcommerce_TCs.Swicth_Page@5034c75a]" name="Login_User" duration-ms="2057" started-at="2022-07-04T13:18:33Z" finished-at="2022-07-04T13:18:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login_02_Invalid_Email -->
-        <test-method status="PASS" signature="Login_03_Email_Not_Found()[pri:0, instance:nopcommerce.PageGeneratorManager_III@51081592]" name="Login_03_Email_Not_Found" duration-ms="1227" started-at="2022-07-04T10:03:15Z" finished-at="2022-07-04T10:03:17Z">
+        </test-method> <!-- Login_User -->
+        <test-method status="FAIL" signature="My_Account()[pri:0, instance:nopcommerce_TCs.Swicth_Page@5034c75a]" name="My_Account" duration-ms="614" started-at="2022-07-04T13:18:35Z" finished-at="2022-07-04T13:18:36Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at nopcommerce_TCs.Swicth_Page.My_Account(Swicth_Page.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login_03_Email_Not_Found -->
-        <test-method status="PASS" signature="Login_04_Existing_Email_Empty_Password()[pri:0, instance:nopcommerce.PageGeneratorManager_III@51081592]" name="Login_04_Existing_Email_Empty_Password" duration-ms="1131" started-at="2022-07-04T10:03:17Z" finished-at="2022-07-04T10:03:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login_04_Existing_Email_Empty_Password -->
-        <test-method status="PASS" signature="Login_05_Existing_Email_Incorrect_Password()[pri:0, instance:nopcommerce.PageGeneratorManager_III@51081592]" name="Login_05_Existing_Email_Incorrect_Password" duration-ms="1194" started-at="2022-07-04T10:03:18Z" finished-at="2022-07-04T10:03:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login_05_Existing_Email_Incorrect_Password -->
-        <test-method status="PASS" signature="Login_06_Email_Correct_Password()[pri:0, instance:nopcommerce.PageGeneratorManager_III@51081592]" name="Login_06_Email_Correct_Password" duration-ms="1617" started-at="2022-07-04T10:03:19Z" finished-at="2022-07-04T10:03:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login_06_Email_Correct_Password -->
-        <test-method status="PASS" signature="Login_06_My_AccountLink()[pri:0, instance:nopcommerce.PageGeneratorManager_III@51081592]" name="Login_06_My_AccountLink" duration-ms="568" started-at="2022-07-04T10:03:21Z" finished-at="2022-07-04T10:03:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login_06_My_AccountLink -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:nopcommerce.PageGeneratorManager_III@51081592]" name="afterClass" is-config="true" duration-ms="57" started-at="2022-07-04T10:03:21Z" finished-at="2022-07-04T10:03:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- nopcommerce.PageGeneratorManager_III -->
+        </test-method> <!-- My_Account -->
+      </class> <!-- nopcommerce_TCs.Swicth_Page -->
     </test> <!-- Run on Chrome -->
-  </suite> <!-- nopcommerce -->
+  </suite> <!-- nopcommerce_Project_Example -->
 </testng-results>
