@@ -1,8 +1,8 @@
 package pageObjects;
 
 import org.openqa.selenium.WebDriver;
-
 import common.BasePage;
+import pageUl.HomePageUls;
 
 public class MyAccountPageObject extends BasePage {
 	private WebDriver driver;
@@ -12,7 +12,8 @@ public class MyAccountPageObject extends BasePage {
 	}
 
 	public boolean isMyAccountPageDisplayed() {
-		// TODO Auto-generated method stub
+		waitForElementClickable(driver,HomePageUls.MY_ACCOUNT_LINK);
+		clickToElement(driver,HomePageUls.MY_ACCOUNT_LINK);
 		return false;
 	}
 
