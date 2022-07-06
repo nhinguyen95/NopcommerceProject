@@ -2,7 +2,7 @@ package pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import common.BasePage;
-import pageUl.HomePageUls;
+import pageUl.CustormerInforPageUIs;
 
 public class MyAccountPageObject extends BasePage {
 	private WebDriver driver;
@@ -11,10 +11,9 @@ public class MyAccountPageObject extends BasePage {
 		this.driver = driver;
 	}
 
-	public boolean isMyAccountPageDisplayed() {
-		waitForElementClickable(driver,HomePageUls.MY_ACCOUNT_LINK);
-		clickToElement(driver,HomePageUls.MY_ACCOUNT_LINK);
-		return false;
+	public boolean isCustomerInforPageDisplayed() {
+	waitForElementVisible(driver, CustormerInforPageUIs.CUSTOMER_INFOR_HEADER);
+		return isElementDisplayed(driver, CustormerInforPageUIs.CUSTOMER_INFOR_HEADER);
 	}
 
 }

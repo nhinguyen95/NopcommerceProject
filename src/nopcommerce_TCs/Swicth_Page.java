@@ -18,7 +18,7 @@ public class Swicth_Page extends BaseTest {
 	private HomePageObject homePage;
 	private RegisterPageObject registerPage;
 	private LoginPageObject loginPage;
-	private MyAccountPageObject myAccountPage;
+	private MyAccountPageObject customerInforPage;
 
 	@Parameters("browser")
 	@BeforeClass
@@ -55,9 +55,9 @@ public class Swicth_Page extends BaseTest {
 	}
 
 	@Test
-	public void My_Account() {
-		myAccountPage = homePage.clickToMyAccountLink();
-		Assert.assertTrue(myAccountPage.isMyAccountPageDisplayed());
+	public void Customer_Infor() {
+		customerInforPage = homePage.clickToMyAccountLink();
+		Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed());
 	}
 
 }
