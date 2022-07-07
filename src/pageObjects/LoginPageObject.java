@@ -1,8 +1,9 @@
 package pageObjects;
 
 import org.openqa.selenium.WebDriver;
+
+import PageUI.nopcomerce.LoginPageUI;
 import common.BasePage;
-import pageUl.LoginPageUI;
 public class LoginPageObject extends BasePage{
 private WebDriver driver;
 

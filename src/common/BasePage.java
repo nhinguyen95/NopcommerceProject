@@ -14,6 +14,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import PageUI.nopcomerce.PageBaseUI;
+import pageObjects.AddressPageObject;
+import pageObjects.MyProductReviewPageOject;
+import pageObjects.PageGeneratorManager;
+
 public class BasePage {
 	
 	public static BasePage getBasePageOject() {
@@ -327,6 +332,19 @@ public class BasePage {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(xpathLocator)));
 	}
+	
+	private AddressPageObject opendAddressPage(WebDriver driver) {
+		waitForElementClickable(driver, PageBaseUI.ADDRESS_LINK);
+		clickToElement(driver, PageBaseUI.ADDRESS_LINK);
+		return PageGeneratorManager.getAddressPageObject(driver);       
+	}
+	
+	private MyProductReviewPageOject opendMyProductReviewPage(WebDriver driver) {
+		waitForElementClickable(driver, PageBaseUI.MY_PRODUCT_REVIEW_LINK);
+		clickToElement(driver, PageBaseUI.MY_PRODUCT_REVIEW_LINK);
+		return PageGeneratorManager.getMyProductReviewPageOject(driver); 
+	}
+	
 	private long longTimeOut = 30 ;
 	
 	

@@ -1,8 +1,9 @@
 package pageObjects;
 
 import org.openqa.selenium.WebDriver;
+
+import PageUI.nopcomerce.HomePageUls;
 import common.BasePage;
-import pageUl.HomePageUls;
 
 public class HomePageObject extends BasePage {
 	private WebDriver driver;
