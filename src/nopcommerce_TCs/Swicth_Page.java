@@ -6,11 +6,15 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import common.BaseTest;
+import pageObjects.AddressPageObject;
+import pageObjects.CustomerInforPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
 import pageObjects.MyAccountPageObject;
+import pageObjects.MyProductReviewPageOject;
 import pageObjects.PageGeneratorManager;
 import pageObjects.RegisterPageObject;
+import pageObjects.RewardPointPageObject;
 
 public class Swicth_Page extends BaseTest {
 	private WebDriver driver;
@@ -18,7 +22,11 @@ public class Swicth_Page extends BaseTest {
 	private HomePageObject homePage;
 	private RegisterPageObject registerPage;
 	private LoginPageObject loginPage;
-	private MyAccountPageObject customerInforPage;
+	private MyAccountPageObject myAccountPage;
+	private AddressPageObject addressPage ;
+	private MyProductReviewPageOject myProductReviewPage ;
+	private RewardPointPageObject reviewPointPage ;
+	private CustomerInforPageObject customerInforPage ;
 
 	@Parameters("browser")
 	@BeforeClass
@@ -55,9 +63,18 @@ public class Swicth_Page extends BaseTest {
 	}
 
 	@Test
-	public void Customer_Infor() {
-		customerInforPage = homePage.clickToMyAccountLink();
-		Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed());
+	public void My_Account() {
+		myAccountPage = homePage.clickToMyAccountLink();
+		Assert.assertTrue(myAccountPage.isCustomerInforPageDisplayed());
 	}
+	
+	@Test
+	public void Switch_Page() {
+		addressPage = myAccountPage.opendAddressPage(driver);
+		myProductReviewPage = myProductReviewPage.opendMyProductReviewPage(driver);
+		reviewPointPage = reviewPointPage.opendRewardPointPage(driver);
+		customerInforPage = customerInforPage .opendCustomerInforPage(driver);
+	}
+
 
 }

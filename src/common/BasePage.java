@@ -16,8 +16,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import PageUI.nopcomerce.PageBaseUI;
 import pageObjects.AddressPageObject;
+import pageObjects.CustomerInforPageObject;
 import pageObjects.MyProductReviewPageOject;
 import pageObjects.PageGeneratorManager;
+import pageObjects.RewardPointPageObject;
 
 public class BasePage {
 	
@@ -333,18 +335,29 @@ public class BasePage {
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(xpathLocator)));
 	}
 	
-	private AddressPageObject opendAddressPage(WebDriver driver) {
+	public AddressPageObject opendAddressPage(WebDriver driver) {
 		waitForElementClickable(driver, PageBaseUI.ADDRESS_LINK);
 		clickToElement(driver, PageBaseUI.ADDRESS_LINK);
 		return PageGeneratorManager.getAddressPageObject(driver);       
 	}
 	
-	private MyProductReviewPageOject opendMyProductReviewPage(WebDriver driver) {
+	public MyProductReviewPageOject opendMyProductReviewPage(WebDriver driver) {
 		waitForElementClickable(driver, PageBaseUI.MY_PRODUCT_REVIEW_LINK);
 		clickToElement(driver, PageBaseUI.MY_PRODUCT_REVIEW_LINK);
 		return PageGeneratorManager.getMyProductReviewPageOject(driver); 
 	}
 	
+	public RewardPointPageObject opendRewardPointPage(WebDriver driver) {
+		waitForElementClickable(driver, PageBaseUI.MY_PRODUCT_REVIEW_LINK);
+		clickToElement(driver, PageBaseUI.MY_PRODUCT_REVIEW_LINK);
+		return PageGeneratorManager.getRewardPointPageObject(driver);
+	}
+	
+	public CustomerInforPageObject opendCustomerInforPage(WebDriver driver) {
+		waitForElementClickable(driver, PageBaseUI.CUSTOMER_INFOR_LINK);
+		clickToElement(driver, PageBaseUI.CUSTOMER_INFOR_LINK);
+		return PageGeneratorManager.getCustomerInforPageObject(driver);
+	}
 	private long longTimeOut = 30 ;
 	
 	

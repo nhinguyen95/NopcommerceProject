@@ -1,8 +1,9 @@
 package pageObjects;
 
 import org.openqa.selenium.WebDriver;
+
+import PageUI.nopcomerce.CustormerInforPageUIs;
 import common.BasePage;
-import pageUl.CustormerInforPageUIs;
 
 public class MyAccountPageObject extends BasePage {
 	private WebDriver driver;

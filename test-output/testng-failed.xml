@@ -7,7 +7,7 @@
     <classes>
       <class name="nopcommerce_TCs.Swicth_Page">
         <methods>
-          <include name="My_Account"/>
+          <include name="Customer_Infor"/>
           <include name="BeforeClass"/>
         </methods>
       </class> <!-- nopcommerce_TCs.Swicth_Page -->

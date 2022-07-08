@@ -25,4 +25,12 @@ public class PageGeneratorManager {
 	public static MyProductReviewPageOject getMyProductReviewPageOject(WebDriver driver) {
 		return new MyProductReviewPageOject(driver);
 	}
+	
+	public static RewardPointPageObject getRewardPointPageObject(WebDriver driver) {
+		return new RewardPointPageObject(driver);
+	}
+	
+	public static CustomerInforPageObject getCustomerInforPageObject(WebDriver driver) {
+		return new CustomerInforPageObject(driver);
+	}
 }

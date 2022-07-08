@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="nopcommerce_Project_Example" duration-ms="9453" started-at="2022-07-04T06:18:26Z" finished-at="2022-07-04T06:18:36Z">
+  <suite name="nopcommerce_Project_Example" duration-ms="38675" started-at="2022-07-07T09:59:24Z" finished-at="2022-07-07T10:00:02Z">
     <groups>
     </groups>
-    <test name="Run on Chrome" duration-ms="9453" started-at="2022-07-04T06:18:26Z" finished-at="2022-07-04T06:18:36Z">
+    <test name="Run on Chrome" duration-ms="38675" started-at="2022-07-07T09:59:24Z" finished-at="2022-07-07T10:00:02Z">
       <class name="nopcommerce_TCs.Swicth_Page">
-        <test-method status="PASS" signature="BeforeClass(java.lang.String)[pri:0, instance:nopcommerce_TCs.Swicth_Page@5034c75a]" name="BeforeClass" is-config="true" duration-ms="3218" started-at="2022-07-04T13:18:26Z" finished-at="2022-07-04T13:18:29Z">
+        <test-method status="PASS" signature="BeforeClass(java.lang.String)[pri:0, instance:nopcommerce_TCs.Swicth_Page@5034c75a]" name="BeforeClass" is-config="true" duration-ms="3153" started-at="2022-07-07T16:59:24Z" finished-at="2022-07-07T16:59:27Z">
           <params>
             <param index="0">
               <value>
@@ -18,26 +18,28 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method status="PASS" signature="Login_01_Register_User()[pri:0, instance:nopcommerce_TCs.Swicth_Page@5034c75a]" name="Login_01_Register_User" duration-ms="3549" started-at="2022-07-04T13:18:29Z" finished-at="2022-07-04T13:18:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login_01_Register_User -->
-        <test-method status="PASS" signature="Login_User()[pri:0, instance:nopcommerce_TCs.Swicth_Page@5034c75a]" name="Login_User" duration-ms="2057" started-at="2022-07-04T13:18:33Z" finished-at="2022-07-04T13:18:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login_User -->
-        <test-method status="FAIL" signature="My_Account()[pri:0, instance:nopcommerce_TCs.Swicth_Page@5034c75a]" name="My_Account" duration-ms="614" started-at="2022-07-04T13:18:35Z" finished-at="2022-07-04T13:18:36Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="Customer_Infor()[pri:0, instance:nopcommerce_TCs.Swicth_Page@5034c75a]" name="Customer_Infor" duration-ms="30293" started-at="2022-07-07T16:59:27Z" finished-at="2022-07-07T16:59:57Z">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Timed out after 30 seconds waiting for element to be clickable: By.xpath: //a[@class='ico-account']
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'DESKTOP-J5OBS0H', ip: '192.168.60.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55414}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}), userDataDir=C:\Users\Admin\AppData\Local\Temp\scoped_dir11628_1186536148}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=103.0.5060.114, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 5092551f3c0971d3ff5517fcc0236e33]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at nopcommerce_TCs.Swicth_Page.My_Account(Swicth_Page.java:62)
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for element to be clickable: By.xpath: //a[@class='ico-account']
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'DESKTOP-J5OBS0H', ip: '192.168.60.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55414}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}), userDataDir=C:\Users\Admin\AppData\Local\Temp\scoped_dir11628_1186536148}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=103.0.5060.114, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 5092551f3c0971d3ff5517fcc0236e33
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at common.BasePage.waitForElementClickable(BasePage.java:328)
+	at pageObjects.HomePageObject.clickToMyAccountLink(HomePageObject.java:34)
+	at nopcommerce_TCs.Swicth_Page.Customer_Infor(Swicth_Page.java:59)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -62,12 +64,50 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-account']"}
+  (Session info: chrome=103.0.5060.114)
+  (Driver info: chromedriver=103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}),platform=Windows NT 10.0.19043 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'DESKTOP-J5OBS0H', ip: '192.168.60.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55414}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}), userDataDir=C:\Users\Admin\AppData\Local\Temp\scoped_dir11628_1186536148}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=103.0.5060.114, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 5092551f3c0971d3ff5517fcc0236e33
+*** Element info: {Using=xpath, value=//a[@class='ico-account']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:897)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:653)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 27 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- My_Account -->
+        </test-method> <!-- Customer_Infor -->
+        <test-method status="PASS" signature="Login_01_Register_User()[pri:0, instance:nopcommerce_TCs.Swicth_Page@5034c75a]" name="Login_01_Register_User" duration-ms="3114" started-at="2022-07-07T16:59:57Z" finished-at="2022-07-07T17:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_01_Register_User -->
+        <test-method status="PASS" signature="Login_User()[pri:0, instance:nopcommerce_TCs.Swicth_Page@5034c75a]" name="Login_User" duration-ms="2089" started-at="2022-07-07T17:00:00Z" finished-at="2022-07-07T17:00:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_User -->
       </class> <!-- nopcommerce_TCs.Swicth_Page -->
     </test> <!-- Run on Chrome -->
   </suite> <!-- nopcommerce_Project_Example -->
