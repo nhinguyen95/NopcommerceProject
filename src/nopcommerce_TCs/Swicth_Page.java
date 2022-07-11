@@ -70,10 +70,10 @@ public class Swicth_Page extends BaseTest {
 	
 	@Test
 	public void Switch_Page() {
-		addressPage = myAccountPage.opendAddressPage(driver);
-		myProductReviewPage = myProductReviewPage.opendMyProductReviewPage(driver);
-		reviewPointPage = reviewPointPage.opendRewardPointPage(driver);
-		customerInforPage = customerInforPage .opendCustomerInforPage(driver);
+	    addressPage = myAccountPage.opendAddressPage(driver);
+		myProductReviewPage = addressPage.opendMyProductReviewPage(driver);
+		reviewPointPage = myProductReviewPage.opendRewardPointPage(driver);
+		customerInforPage = reviewPointPage.opendCustomerInforPage(driver);
 	}
 
 
