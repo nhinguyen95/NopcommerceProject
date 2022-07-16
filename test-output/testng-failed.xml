@@ -7,8 +7,11 @@
     <classes>
       <class name="nopcommerce_TCs.Swicth_Page">
         <methods>
-          <include name="Customer_Infor"/>
+          <include name="Login_User"/>
+          <include name="My_Account"/>
           <include name="BeforeClass"/>
+          <include name="Switch_Page"/>
+          <include name="Login_01_Register_User"/>
         </methods>
       </class> <!-- nopcommerce_TCs.Swicth_Page -->
     </classes>
