@@ -1,9 +1,10 @@
-package pageObjects;
+package User.PageObjects;
 
 import org.openqa.selenium.WebDriver;
 
 import User.nopcomerce.PageUIs.User_LoginPageUI;
 import common.BasePage;
+import common.PageGeneratorManager;
 public class User_LoginPageObject extends BasePage{
 private WebDriver driver;
 
@@ -11,11 +12,10 @@ public User_LoginPageObject(WebDriver driver) {
 	this.driver = driver;
 }
 
-public void clickToButtonLogin() {
+public User_HomePageObject clickToButtonLogin() {
 	waitForElementClickable(driver, User_LoginPageUI.BUTTON_LOGIN);
 	clickToElement(driver, User_LoginPageUI.BUTTON_LOGIN);
-	
-	
+	return PageGeneratorManager.getHomePage(driver);
 }
 
 public String getErrorAtEmailTextbox() {
@@ -23,15 +23,15 @@ public String getErrorAtEmailTextbox() {
 	return getElementText(driver, User_LoginPageUI.EMAIL_TEXTBOX_ERROR_MESSAGE);
 }
 
-public void inputToEmailTextbox(String invalidEmailAddress) {
+public void inputToEmailTextbox(String userEmailAddress) {
 	  waitAllElementVisible(driver, User_LoginPageUI.EMAIL_TEXTBOX);
-      sendkeyToElement(driver, User_LoginPageUI.EMAIL_TEXTBOX, invalidEmailAddress);
+      sendkeyToElement(driver, User_LoginPageUI.EMAIL_TEXTBOX, userEmailAddress);
 	
 }
 
-public void inputToPasswordTextbox(String password) {
+public void inputToPasswordTextbox(String userPassword) {
 	waitAllElementVisible(driver, User_LoginPageUI.PASSWORD_TEXTBOX);
-    sendkeyToElement(driver, User_LoginPageUI.PASSWORD_TEXTBOX, password);	
+    sendkeyToElement(driver, User_LoginPageUI.PASSWORD_TEXTBOX, userPassword);	
 }
 
 public String getErrorMessageUnsuccesfull() {
@@ -39,8 +39,9 @@ public String getErrorMessageUnsuccesfull() {
 	return getElementText(driver, User_LoginPageUI.UNSUCSSES_FULL_ERROR_MESSAGE);
 }
 
-public void loginAsUser() {
-	// TODO Auto-generated method stub
-	
+public User_HomePageObject loginAsUser( String userEmailAddress,String userPassword) {
+inputToEmailTextbox(userEmailAddress);
+inputToPasswordTextbox(userPassword);
+return clickToButtonLogin();
 }
 }

@@ -10,16 +10,16 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import User.PageObjects.User_HomePageObject;
+import User.PageObjects.User_RegisterPageObject;
 import common.BasePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import pageObjects.HomePageObject;
-import pageObjects.RegisterPageObject;
 
     public class Topic03_Page_Object {
 		private WebDriver driver;
 		String emailAddress,firstName, lastname,password ;
-		private HomePageObject homePage = new HomePageObject(driver);
-	    private	RegisterPageObject registerPage = new RegisterPageObject(driver);
+		private User_HomePageObject homePage = new User_HomePageObject(driver);
+	    private	User_RegisterPageObject registerPage = new User_RegisterPageObject(driver);
 		BasePage basePage;
 		
 	@BeforeClass
@@ -37,8 +37,8 @@ import pageObjects.RegisterPageObject;
 		lastname = "FC";
 		password = "123456";
 		
-		homePage = new HomePageObject(driver);
-		registerPage = new RegisterPageObject(driver);
+		homePage = new User_HomePageObject(driver);
+		registerPage = new User_RegisterPageObject(driver);
 		
 	}
 	

@@ -5,34 +5,35 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import User.PageObjects.User_AddressPageObject;
+import User.PageObjects.User_CustomerInforPageObject;
+import User.PageObjects.User_HomePageObject;
+import User.PageObjects.User_LoginPageObject;
+import User.PageObjects.User_MyAccountPageObject;
+import User.PageObjects.User_MyProductReviewPageOject;
+import User.PageObjects.User_RegisterPageObject;
+import User.PageObjects.User_RewardPointPageObject;
 import common.BaseTest;
-import pageObjects.AddressPageObject;
-import pageObjects.CustomerInforPageObject;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.MyAccountPageObject;
-import pageObjects.MyProductReviewPageOject;
-import pageObjects.PageGeneratorManager;
-import pageObjects.RegisterPageObject;
-import pageObjects.RewardPointPageObject;
+import common.PageGeneratorManager;
 
 public class Swicth_Page extends BaseTest {
 	private WebDriver driver;
 	String EmailAddress, firstName, lastname, password;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
-	private MyAccountPageObject myAccountPage;
-	private AddressPageObject addressPage ;
-	private MyProductReviewPageOject myProductReviewPage ;
-	private RewardPointPageObject reviewPointPage ;
-	private CustomerInforPageObject customerInforPage ;
+	private User_HomePageObject homePage;
+	private User_RegisterPageObject registerPage;
+	private User_LoginPageObject loginPage;
+	private User_MyAccountPageObject myAccountPage;
+	private User_AddressPageObject addressPage ;
+	private User_MyProductReviewPageOject myProductReviewPage ;
+	private User_RewardPointPageObject reviewPointPage ;
+	private User_CustomerInforPageObject customerInforPage ;
 
 	@Parameters("browser")
 	@BeforeClass
 	public void BeforeClass(String browerName) {
 		driver = getBrowerDriver(browerName);
-		homePage = PageGeneratorManager.getHomePageObject(driver);
+		homePage = PageGeneratorManager.getHomePage(driver);
          driver.getWindowHandles().size();
 		EmailAddress = "Tester" + generateEmail();
 		firstName = "Auto";
@@ -55,10 +56,10 @@ public class Swicth_Page extends BaseTest {
 	
 	@Test
 	public void Login_User() {
-		loginPage = homePage.clickToLoginLink();
+		loginPage = homePage.openLoginPage();
 		loginPage.inputToEmailTextbox(EmailAddress);
 		loginPage.inputToPasswordTextbox(password);
-		loginPage.clickToButtonLogin();
+	    loginPage.clickToButtonLogin();
 		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 	}
 

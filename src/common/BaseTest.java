@@ -29,7 +29,7 @@ public class BaseTest {
 		}
 		
 		BaseTestDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		BaseTestDriver.get("https://demo.nopcommerce.com/");
+		BaseTestDriver.get(GlobalConstants.USER_PAGE_URL);
 		return BaseTestDriver;
 	}
 	public String generateEmail() {

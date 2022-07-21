@@ -5,12 +5,12 @@
   <test name="Run on Chrome(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="nopcommerce_TCs.Swicth_Page">
+      <class name="nopcommerce_TCs.Swicth_Role">
         <methods>
-          <include name="Customer_Infor"/>
           <include name="BeforeClass"/>
+          <include name="Role_02_Admin"/>
         </methods>
-      </class> <!-- nopcommerce_TCs.Swicth_Page -->
+      </class> <!-- nopcommerce_TCs.Swicth_Role -->
     </classes>
   </test> <!-- Run on Chrome(failed) -->
 </suite> <!-- Failed suite [nopcommerce_Project_Example] -->

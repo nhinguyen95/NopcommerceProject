@@ -14,12 +14,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import PageUI.nopcomerce.PageBaseUI;
-import pageObjects.AddressPageObject;
-import pageObjects.CustomerInforPageObject;
-import pageObjects.MyProductReviewPageOject;
-import pageObjects.PageGeneratorManager;
-import pageObjects.RewardPointPageObject;
+import User.PageObjects.User_AddressPageObject;
+import User.PageObjects.User_CustomerInforPageObject;
+import User.PageObjects.User_HomePageObject;
+import User.PageObjects.User_MyProductReviewPageOject;
+import User.PageObjects.User_RewardPointPageObject;
+import User.nopcomerce.PageUIs.PageBaseUI;
+import User.nopcomerce.PageUIs.User_RegisterPageUI;
 
 public class BasePage {
 	
@@ -335,29 +336,31 @@ public class BasePage {
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(xpathLocator)));
 	}
 	
-	public AddressPageObject opendAddressPage(WebDriver driver) {
+
+	public User_AddressPageObject opendAddressPage(WebDriver driver) {
 		waitForElementClickable(driver, PageBaseUI.ADDRESS_LINK);
 		clickToElement(driver, PageBaseUI.ADDRESS_LINK);
-		return PageGeneratorManager.getAddressPageObject(driver);       
+		return PageGeneratorManager.getUserAddressPage(driver);       
 	}
 	
-	public MyProductReviewPageOject opendMyProductReviewPage(WebDriver driver) {
+	public User_MyProductReviewPageOject opendMyProductReviewPage(WebDriver driver) {
 		waitForElementClickable(driver, PageBaseUI.MY_PRODUCT_REVIEW_LINK);
 		clickToElement(driver, PageBaseUI.MY_PRODUCT_REVIEW_LINK);
-		return PageGeneratorManager.getMyProductReviewPageOject(driver); 
+		return PageGeneratorManager.getUserMyProductReviewPage(driver); 
 	}
 	
-	public RewardPointPageObject opendRewardPointPage(WebDriver driver) {
+	public User_RewardPointPageObject opendRewardPointPage(WebDriver driver) {
 		waitForElementClickable(driver, PageBaseUI.MY_PRODUCT_REVIEW_LINK);
 		clickToElement(driver, PageBaseUI.MY_PRODUCT_REVIEW_LINK);
-		return PageGeneratorManager.getRewardPointPageObject(driver);
+		return PageGeneratorManager.getUserRewardPointPage(driver);
 	}
 	
-	public CustomerInforPageObject opendCustomerInforPage(WebDriver driver) {
+	public User_CustomerInforPageObject opendCustomerInforPage(WebDriver driver) {
 		waitForElementClickable(driver, PageBaseUI.CUSTOMER_INFOR_LINK);
 		clickToElement(driver, PageBaseUI.CUSTOMER_INFOR_LINK);
-		return PageGeneratorManager.getCustomerInforPageObject(driver);
+		return PageGeneratorManager.getUserCustomerInforPage(driver);
 	}
+	
 	private long longTimeOut = 30 ;
 	
 	

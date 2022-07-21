@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import BasePageFactory.BasePageFactory;
-import pageObjects.RegisterPageObject;
+import User.PageObjects.User_RegisterPageObject;
 
 public class HomePageObject01 extends BasePageFactory{
 	private WebDriver driver;
@@ -22,7 +22,7 @@ public class HomePageObject01 extends BasePageFactory{
 	public void clickToRegisterLink() {
        waitForElementClickable(driver,registerLinkElement);
 		clickToElement(driver, registerLinkElement);	
-		new RegisterPageObject(driver);
+		new User_RegisterPageObject(driver);
 	}
 
 }

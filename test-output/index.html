@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-nopcommerce_Project_Example">
-              <span class="suite-name border-failed">nopcommerce_Project_Example</span>
+              <span class="suite-name border-passed">nopcommerce_Project_Example</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-nopcommerce_Project_Example" class="hide-methods failed suite-nopcommerce_Project_Example"> (hide)</a> <!-- hide-methods failed suite-nopcommerce_Project_Example -->
-                      <a href="#" panel-name="suite-nopcommerce_Project_Example" class="show-methods failed suite-nopcommerce_Project_Example"> (show)</a> <!-- show-methods failed suite-nopcommerce_Project_Example -->
-                    </span>
-                    <div class="method-list-content failed suite-nopcommerce_Project_Example">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-nopcommerce_Project_Example" title="nopcommerce_TCs.Swicth_Page" hash-for-method="My_Account">My_Account</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-nopcommerce_Project_Example -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,12 +101,17 @@
                     <div class="method-list-content passed suite-nopcommerce_Project_Example">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-nopcommerce_Project_Example" title="nopcommerce_TCs.Swicth_Page" hash-for-method="Login_01_Register_User">Login_01_Register_User</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-nopcommerce_Project_Example" title="nopcommerce_TCs.Swicth_Role" hash-for-method="Login_01_Register_User">Login_01_Register_User</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-nopcommerce_Project_Example" title="nopcommerce_TCs.Swicth_Page" hash-for-method="Login_User">Login_User</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-nopcommerce_Project_Example" title="nopcommerce_TCs.Swicth_Role" hash-for-method="Role_01_User">Role_01_User</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-nopcommerce_Project_Example" title="nopcommerce_TCs.Swicth_Role" hash-for-method="Role_02_Admin">Role_02_Admin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-nopcommerce_Project_Example -->
@@ -135,29 +126,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-nopcommerce_Project_Example" class="panel nopcommerce_Project_Example">
-          <div class="suite-nopcommerce_Project_Example-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">nopcommerce_TCs.Swicth_Page</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="My_Account">
-                  </a> <!-- My_Account -->
-                  <span class="method-name">My_Account</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at nopcommerce_TCs.Swicth_Page.My_Account(Swicth_Page.java:62)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-nopcommerce_Project_Example-class-failed -->
           <div class="suite-nopcommerce_Project_Example-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">nopcommerce_TCs.Swicth_Page</span>
+              <span class="class-name">nopcommerce_TCs.Swicth_Role</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -169,9 +141,16 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Login_User">
-                  </a> <!-- Login_User -->
-                  <span class="method-name">Login_User</span>
+                  <a name="Role_01_User">
+                  </a> <!-- Role_01_User -->
+                  <span class="method-name">Role_01_User</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Role_02_Admin">
+                  </a> <!-- Role_02_Admin -->
+                  <span class="method-name">Role_02_Admin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -189,7 +168,7 @@
   &lt;test name=&quot;Run on Chrome&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;nopcommerce_TCs.Swicth_Page&quot;/&gt;
+      &lt;class name=&quot;nopcommerce_TCs.Swicth_Role&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Run on Chrome --&gt;
 &lt;/suite&gt; &lt;!-- nopcommerce_Project_Example --&gt;
@@ -231,22 +210,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Login_01_Register_User')
-data.setCell(0, 2, 'nopcommerce_TCs.Swicth_Page')
-data.setCell(0, 3, 3549);
+data.setCell(0, 1, 'Role_02_Admin')
+data.setCell(0, 2, 'nopcommerce_TCs.Swicth_Role')
+data.setCell(0, 3, 5251);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Login_User')
-data.setCell(1, 2, 'nopcommerce_TCs.Swicth_Page')
-data.setCell(1, 3, 2057);
+data.setCell(1, 1, 'Login_01_Register_User')
+data.setCell(1, 2, 'nopcommerce_TCs.Swicth_Role')
+data.setCell(1, 3, 3201);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'My_Account')
-data.setCell(2, 2, 'nopcommerce_TCs.Swicth_Page')
-data.setCell(2, 3, 614);
+data.setCell(2, 1, 'Role_01_User')
+data.setCell(2, 2, 'nopcommerce_TCs.Swicth_Role')
+data.setCell(2, 3, 1834);
 window.suiteTableData['nopcommerce_Project_Example']= { tableData: data, tableDiv: 'times-div-nopcommerce_Project_Example'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-nopcommerce_Project_Example">
               </div> <!-- times-div-nopcommerce_Project_Example -->
             </div> <!-- times-div -->
@@ -272,24 +251,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">nopcommerce_TCs.Swicth_Page</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">nopcommerce_TCs.Swicth_Role</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">BeforeClass(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Login_01_Register_User</span>
-                <span class="method-start">3221 ms</span>
+                <span class="method-start">2496 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Login_User</span>
-                <span class="method-start">6771 ms</span>
+                <span class="method-name">Role_01_User</span>
+                <span class="method-start">5699 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">My_Account</span>
-                <span class="method-start">8831 ms</span>
+                <span class="method-name">Role_02_Admin</span>
+                <span class="method-start">7535 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
