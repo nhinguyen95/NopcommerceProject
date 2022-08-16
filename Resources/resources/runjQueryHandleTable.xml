@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="nopcommerce_Project_Example">
+<parameter name = "url" value="https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/"/>
+	<test name="Run on Chrome">
+	<parameter name = "browser" value ="chrome"/>
+		<classes>
+			<class name="jQuery.HandleDataTable" />
+		</classes>
+	</test> 
+</suite> 

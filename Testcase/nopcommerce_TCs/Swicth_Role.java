@@ -63,7 +63,7 @@ public class Swicth_Role extends BaseTest {
 		userCustomerInforPage = userHomePage.opendMyAccountPage();
 		userHomePage = userCustomerInforPage.clickToLogOutLinkAtUserPage(driver);
 		
-		userHomePage.openPageUrL(driver, GlobalConstants.ADMIN_PAGE_URL);
+		userHomePage.openPageUrL(driver, GlobalConstants.ADMIN_DEV_URL);
 		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 		adminLoginPage.loginAsAdmin(adminEmailAddress, adminPassword);
 		Assert.assertTrue(adminLoginPage.isAdminDashboardDisplayed());
@@ -75,7 +75,7 @@ public class Swicth_Role extends BaseTest {
 
 	@Test
 	public void Role_02_Admin_To_User() {
-		adminLoginPage.openPageUrL(driver, GlobalConstants.USER_PAGE_URL);
+		adminLoginPage.openPageUrL(driver, GlobalConstants.USER_DEV_URL);
 		userHomePage = PageGeneratorManager.getUserHomePage(driver);
 	}
 
