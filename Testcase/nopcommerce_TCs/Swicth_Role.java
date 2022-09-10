@@ -7,15 +7,15 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import Admin.PageObjects.AdminDashboardPageObject;
-import Admin.PageObjects.Admin_LoginPageObject;
-import User.PageObjects.User_CustomerInforPageObject;
-import User.PageObjects.User_HomePageObject;
-import User.PageObjects.User_LoginPageObject;
-import User.PageObjects.User_RegisterPageObject;
 import common.BaseTest;
 import common.GlobalConstants;
 import common.PageGeneratorManager;
+import pageObjects.nopcommerce.Admin.AdminDashboardPageObject;
+import pageObjects.nopcommerce.Admin.Admin_LoginPageObject;
+import pageObjects.nopcommerce.User.User_CustomerInforPageObject;
+import pageObjects.nopcommerce.User.User_HomePageObject;
+import pageObjects.nopcommerce.User.User_LoginPageObject;
+import pageObjects.nopcommerce.User.User_RegisterPageObject;
 
 public class Swicth_Role extends BaseTest {
 
@@ -63,7 +63,7 @@ public class Swicth_Role extends BaseTest {
 		userCustomerInforPage = userHomePage.opendMyAccountPage();
 		userHomePage = userCustomerInforPage.clickToLogOutLinkAtUserPage(driver);
 		
-		userHomePage.openPageUrL(driver, GlobalConstants.ADMIN_PAGE_URL);
+		userHomePage.openPageUrL(driver, GlobalConstants.ADMIN_DEV_URL);
 		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 		adminLoginPage.loginAsAdmin(adminEmailAddress, adminPassword);
 		Assert.assertTrue(adminLoginPage.isAdminDashboardDisplayed());
@@ -75,7 +75,7 @@ public class Swicth_Role extends BaseTest {
 
 	@Test
 	public void Role_02_Admin_To_User() {
-		adminLoginPage.openPageUrL(driver, GlobalConstants.USER_PAGE_URL);
+		adminLoginPage.openPageUrL(driver, GlobalConstants.USER_DEV_URL);
 		userHomePage = PageGeneratorManager.getUserHomePage(driver);
 	}
 

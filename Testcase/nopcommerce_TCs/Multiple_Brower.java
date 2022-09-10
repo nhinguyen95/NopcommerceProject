@@ -6,10 +6,11 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import User.PageObjects.User_HomePageObject;
-import User.PageObjects.User_LoginPageObject;
+
 import common.BasePage;
 import common.BaseTest;
+import pageObjects.nopcommerce.User.User_HomePageObject;
+import pageObjects.nopcommerce.User.User_LoginPageObject;
 
 public class Multiple_Brower extends BaseTest {
 	private WebDriver driver;

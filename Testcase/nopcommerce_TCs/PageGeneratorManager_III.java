@@ -7,12 +7,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import User.PageObjects.User_HomePageObject;
-import User.PageObjects.User_LoginPageObject;
-import User.PageObjects.User_MyAccountPageObject;
-import User.PageObjects.User_RegisterPageObject;
 import common.BaseTest;
 import common.PageGeneratorManager;
+import pageObjects.nopcommerce.User.User_HomePageObject;
+import pageObjects.nopcommerce.User.User_LoginPageObject;
+import pageObjects.nopcommerce.User.User_MyAccountPageObject;
+import pageObjects.nopcommerce.User.User_RegisterPageObject;
 
 @Test
 public class PageGeneratorManager_III extends BaseTest {

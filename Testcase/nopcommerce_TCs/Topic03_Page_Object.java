@@ -10,10 +10,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import User.PageObjects.User_HomePageObject;
-import User.PageObjects.User_RegisterPageObject;
 import common.BasePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pageObjects.nopcommerce.User.User_HomePageObject;
+import pageObjects.nopcommerce.User.User_RegisterPageObject;
 
     public class Topic03_Page_Object {
 		private WebDriver driver;

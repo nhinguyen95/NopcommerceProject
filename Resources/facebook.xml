@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="facebook">
+
+<listeners>
+<listener class-name = "common.MethodListener"></listener>
+</listeners>
+
+<parameter name = "url" value="https://www.facebook.com/"/>
+	<test name="Run on Chrome">
+	<parameter name = "browser" value ="chrome"/>
+		<classes>
+			<class name="com.facebook.register.Verify_Element_Undisplayed" />
+		</classes>
+	</test> 
+</suite> 

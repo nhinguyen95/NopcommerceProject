@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="src" path="Testcase"/>
-	<classpathentry kind="src" path="Jave Basic"/>
-	<classpathentry kind="lib" path="lib/selenium-server-standalone-2.53.1.jar"/>
 	<classpathentry kind="lib" path="WebDriverManger/commons-codec-1.13.jar"/>
 	<classpathentry kind="lib" path="WebDriverManger/commons-collections4-4.3.jar"/>
 	<classpathentry kind="lib" path="WebDriverManger/commons-compress-1.20.jar"/>
@@ -16,5 +13,20 @@
 	<classpathentry kind="lib" path="WebDriverManger/jsoup-1.13.1.jar"/>
 	<classpathentry kind="lib" path="WebDriverManger/slf4j-api-1.7.30.jar"/>
 	<classpathentry kind="lib" path="WebDriverManger/webdrivermanager-4.2.0.jar"/>
+	<classpathentry kind="lib" path="libSelenium/selenium-server-standalone-2.53.1.jar"/>
+	<classpathentry kind="lib" path="libLog4J/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="libLog4J/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="libLog4J/commons-lang3-3.8.1.jar"/>
+	<classpathentry kind="lib" path="libReportNG/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="libReportNG/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="libReportNG/reportng-1.1.4.jar"/>
+	<classpathentry kind="lib" path="libReportNG/velocity-1.4.jar"/>
+	<classpathentry kind="src" path="Testcase"/>
+	<classpathentry kind="src" path="Jave Basic"/>
+	<classpathentry kind="src" path="Actions"/>
+	<classpathentry kind="src" path="Interfaces"/>
+	<classpathentry kind="src" path="Resources"/>
+	<classpathentry kind="src" path="PageObjects"/>
+	<classpathentry kind="src" path="BaseObjects"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

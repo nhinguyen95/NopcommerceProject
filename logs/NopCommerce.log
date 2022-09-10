@@ -1,0 +1,21 @@
+[INFO ] [2022-09-04 21:10:08,208] Register-Step 01: Navigate to 'Register' Page
+[INFO ] [2022-09-04 21:11:26,149] Login-Step 01: Navigate to 'login' Page
+[INFO ] [2022-09-04 21:38:51,592] Register-Step 01: Navigate to 'Register' Page
+[INFO ] [2022-09-04 21:38:53,406] Register-Step 02: Enter to FirtName textbox with value is 'Auto'
+[INFO ] [2022-09-04 21:38:53,901] Register-Step 03: Enter to LastName textbox with value is 'FC'
+[INFO ] [2022-09-04 21:38:54,333] Register-Step 04: Enter to EmailAddress textbox with value is 'Tester8733@mail.com'
+[INFO ] [2022-09-04 21:38:54,828] Register-Step 05: Enter to Password textbox with value is '123456'
+[INFO ] [2022-09-04 21:38:55,234] Register-Step 06: Enter to ConfirmPassword textbox with value is '123456'
+[INFO ] [2022-09-04 21:38:55,550] Register-Step 07: Click to 'Register' button
+[INFO ] [2022-09-04 21:38:56,928] Register-Step 08: Verify Register success mesage is display
+[INFO ] [2022-09-04 21:38:57,153]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-09-04 21:38:57,154] Register-Step 09: Click to LogOut Link
+[INFO ] [2022-09-04 21:38:58,483] Login-Step 01: Navigate to 'login' Page
+[INFO ] [2022-09-04 21:38:59,494] Login-Step 02: Enter to EmailAddress textbox with value is 'Tester8733@mail.com'
+[INFO ] [2022-09-04 21:38:59,813] Login-Step 03: Enter to Password textbox with value is '123456'
+[INFO ] [2022-09-04 21:39:00,265] Login-Step 04: Click to LogOut Link
+[INFO ] [2022-09-04 21:39:01,484] Login-Step 05: Verify 'MyAccount Link' is display
+[INFO ] [2022-09-04 21:39:01,630]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-09-04 21:39:01,631] Login-Step 06: Click to my Account Link
+[INFO ] [2022-09-04 21:39:02,770] Login-Step 07: Verify 'CustomerInfor' page is display
+[INFO ] [2022-09-04 21:39:02,892]  -------------------------- PASSED -------------------------- 
